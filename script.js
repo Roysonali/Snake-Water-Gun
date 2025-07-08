@@ -35,9 +35,9 @@ let result = "";
 if(userSelection === computerSelection){
     result = "It's a draw!";
 }else if (
-    (userSelection==="snake" && computerSelection==="water") ||
-    (userSelection==="water" && computerSelection==="gun") ||
-    (userSelection==="gun" && computerSelection==="snake") 
+    (userSelection==="Snake" && computerSelection==="Water") ||
+    (userSelection==="Water" && computerSelection==="Gun") ||
+    (userSelection==="Gun" && computerSelection==="Snake") 
 ){
     result = "You won this round!";
     user_score++;
@@ -58,7 +58,7 @@ round++;
 setTimeout(() => {
     document.getElementById("user-choice").textContent = "-";
     document.getElementById("computer-choice").textContent = "-";
-  }, 800); // wait 1 sec to see choice before clearing
+  }, 500); // wait 1 sec to see choice before clearing
 
 
 // Reset game after final round
