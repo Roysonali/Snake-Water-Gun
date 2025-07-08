@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; 
+}
+.container{
+  background-color:#99d1df;
+  width: 50%;
+  margin: auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.choice-row{
+    display: flex;
+    height: 200px;
+    justify-content:center;
+    gap: 40px;
+}
+.choice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+.choice button{
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+    background-color: rgb(65, 118, 178);
+    color: white;
+}  
+.status{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+.play button{
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+    background-color: rgb(65, 118, 178);
+    color: white;    
+    margin-top: 20px;
+
+}

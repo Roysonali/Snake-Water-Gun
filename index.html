@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Water Gun</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Snake Water Gun</h1>  
+    
+    <div class="choice-row">
+
+        <div class="choice">
+            <img src="img/snake.jpg" alt="snake">
+            <button onclick="selectChoice('Snake')">Snake</button>
+        </div>
+
+        <div class="choice">
+            <img src="img/water.jpg" alt="Water">
+            <button onclick="selectChoice('Water')">Water</button>
+        </div>
+
+        <div class="choice">
+            <img src="img/gun.jpg" alt="Gun">
+            <button onclick="selectChoice('Gun')">Gun</button>
+        </div>
+
+    </div>
+
+    <label for="rounds"><strong>How many rounds:</strong></label>
+    <input type="number" id="rounds" min="1" value="3">
+
+    <div class="status">
+        <p><strong>You:</strong><span id="user-choice">-</span></p></p>
+        <p><strong>Computer:</strong><span id="computer-choice">-</span></p>
+    </div>
+
+    <div class="play">
+        <button onclick="play()">Play</button>
+    </div>
+
+    <div class="results">
+      <p><strong>Round:</strong> <span id="round-num">1</span></p>
+      <p><strong>Result:</strong> <span id="round-result">Ready</span></p>
+      <p><strong>Final Score:</strong> You: <span id="user-score">0</span> | Computer: <span id="computer-score">0</span></p>
+    </div>
+
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
